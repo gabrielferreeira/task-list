@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --background: #262626;
+  --font: #f1f1f1;
+  --dark: #303030;
+  --gray: #ccc;
+  --blue: #0866ff;
+  --green: #00a381;
+  --red: #ff0000;
+}
+
+.center {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+body {
+  position: relative;
+  background-color: var(--background);
+  color: var(--font);
+}

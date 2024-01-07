@@ -1,0 +1,82 @@
+header {
+  background-color: var(--dark);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding: 1rem 0;
+}
+
+.header-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-task .logo {
+  color: var(--font);
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header-task .create-task {
+  background-color: var(--blue);
+  color: var(--font);
+  padding: 8px 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.header-task .create-task:hover {
+  opacity: 1;
+}
+
+.action-task {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-top: 1px solid var(--gray);
+  margin-top: 1rem;
+  padding: 1rem 2% 0 2%;
+}
+
+.action-task input {
+  background-color: var(--background);
+  color: var(--font);
+  width: 100%;
+  max-width: 300px;
+  padding: 0 10px;
+  height: 35px;
+  border-radius: 6px;
+}
+
+.action-task input::placeholder {
+  color: var(--gray);
+}
+
+.action-task input:focus {
+  outline: 1px solid var(--blue);
+}
+
+.action-task button.add-task {
+  background-color: var(--blue);
+  color: var(--font);
+  font-size: 1.2rem;
+  border-radius: 6px;
+  width: 35px;
+  height: 35px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.action-task button.add-task:hover {
+  opacity: 1;
+}
+
+/* CLASSE ADD NO JS */
+
+.action-task.open {
+  display: flex;
+}

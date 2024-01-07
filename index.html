@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="handheldFriendly" content="true" />
+    <meta
+      name="description"
+      content="Este app foi desenvolvido pensando em facilitar a vida daquelas pessoas que tem uma agenda lotada e cheia de compromissos no dia a dia, com ele o usuário é capaz de organizar tudo o que vai fazer no dia, além, de poder excluir a tarefa, o usuário pode também editar e marcar a tarefa como concluida."
+    />
+    <meta
+      name="keywords"
+      content="tasks, task, tarefas, compromissos, agenda, dia a dia"
+    />
+    <meta name="author" content="Gabriel Lopes" />
+
+    <!-- FONTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>App Lista de Tarefas</title>
+  </head>
+  <body>
+    <header>
+      <div class="center">
+        <div class="header-task">
+          <a href="index.html" class="logo"> Listar Tarefas </a>
+
+          <button title="Criar Tarefa" class="create-task">Criar</button>
+        </div>
+      </div>
+
+      <div class="action-task">
+        <input
+          type="text"
+          class="input-task"
+          placeholder="Digite uma tarefa..."
+          required
+        />
+        <button title="Adicionar Tarefa" class="add-task">
+          <i class="bi bi-plus"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <div class="center">
+        <h1>Minhas Tarefas</h1>
+        <div class="result-task">
+          <p>Tarefas: <span id="qtd-task"></span></p>
+          <p>Concluídas: <span id="completed-task"></span></p>
+        </div>
+        <div class="box-task">
+          <ul class="task-items-list"></ul>
+        </div>
+        <p class="author">Desenvolvido por<span> Gabriel Lopes</span></p>
+      </div>
+    </main>
+
+    <div class="modal-edit-task-list">
+      <div class="modal-task">
+        <input
+          type="text"
+          class="edit-task-list"
+          placeholder="Edite sua tarefa..."
+        />
+
+        <div class="action-edit-task-list">
+          <button title="Salvar" class="save-task-list">Salvar</button>
+          <button title="Cancelar" class="exit-task-list">Cancelar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
