@@ -24,12 +24,14 @@ main h1 {
 
 .box-task {
   width: 100%;
-  max-width: 600px;
+  max-width: 610px;
   height: 400px;
   margin: 0 auto;
   background-color: var(--dark);
   padding: 8px;
   border-radius: 6px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .box-task ul .task-items {

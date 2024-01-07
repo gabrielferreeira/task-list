@@ -31,3 +31,12 @@ body {
   background-color: var(--background);
   color: var(--font);
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 6px;
+}
